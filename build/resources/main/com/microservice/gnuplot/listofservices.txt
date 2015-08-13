@@ -1,0 +1,77 @@
+{
+    "list": {
+        "oneD": {
+            "command": [
+                {
+                "id": "0",
+                "description": "GnuService1D",
+                "service": "GNU",
+                "params": "titleName,datafilePath,column1,column2",
+                "template": "set title \"%s\";set xrange [1:3];set yrange [1:3];set datafile separator \",\";plot \"%s\" using %s:%s with lines;",
+                  "alternative": {
+                    "command": [
+                        {
+                            "id": "0",
+                            "description": "Scatter Plot",
+                            "service": "GNU",
+                            "params": "titleName,datafilePath,column1,column2",
+                            "template": "set title \"%s\";set xrange [1:3];set yrange [1:3];set datafile separator \",\";plot \"%s\" using %s:%s with lines;"
+                        },
+                        {
+                            "id": "0",
+                            "description": "Histogram",
+                            "service": "GNU",
+                            "params": "titleName,datafilePath,column1,column2",
+                            "template": "set title \"%s\";set xrange [1:3];set yrange [1:3];set datafile separator \",\";plot \"%s\" using %s:%s with lines;"
+                        }
+                    ]
+                }
+                }
+            ]
+        },
+        "twoD": {
+            "command": [
+                {
+                "id": "1",
+                "description": "GnuService2D",
+                "service": "GNU",
+                "params": "titleName,datafilePath,column1,column2",
+                "template": "set title \"%s\";set xrange [1:3];set yrange [1:3];set datafile separator \",\";plot \"%s\" using %s:%s with lines;",
+                  "alternative": {
+                    "command": [
+                        {
+                            "id": "0",
+                            "description": "Scatter Plot",
+                            "service": "GNU",
+                            "params": "titleName,datafilePath,column1,column2",
+                            "template": "set title \"%s\";set xrange [1:3];set yrange [1:3];set datafile separator \",\";plot \"%s\" using %s:%s with lines;"
+                        },
+                        {
+                            "id": "0",
+                            "description": "Histogram",
+                            "service": "GNU",
+                            "params": "titleName,datafilePath,column1,column2",
+                            "template": "set title \"%s\";set xrange [1:3];set yrange [1:3];set datafile separator \",\";plot \"%s\" using %s:%s with lines;"
+                        }
+                    ]
+                }
+                }
+            ]
+            
+        },
+        "threeD": {
+            "command": [
+                {
+                "id": "2",
+                "description": "",
+                "service": "GNU",
+                "params": "",
+                "template": "",
+                  "alternative": {
+                    "command": []
+                }
+                }
+            ]
+        }
+    }
+}
